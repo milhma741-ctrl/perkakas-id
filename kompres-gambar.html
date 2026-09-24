@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kompres & Resize Gambar Online Gratis — Perkakas.id</title>
+<meta name="description" content="Kompres dan ubah ukuran gambar JPG/PNG langsung di browser tanpa upload ke server. Cepat, aman, dan gratis — cocok untuk website, media sosial, dan email.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Perkakas.id">
+<meta name="theme-color" content="#16202A">
+<link rel="canonical" href="https://perkakas.id/kompres-gambar.html">
+
+<meta property="og:title" content="Kompres & Resize Gambar Online Gratis — Perkakas.id">
+<meta property="og:description" content="Kompres dan ubah ukuran gambar JPG/PNG langsung di browser tanpa upload ke server. Cepat, aman, dan gratis — cocok untuk website, media sosial, dan email.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://perkakas.id/kompres-gambar.html">
+<meta property="og:site_name" content="Perkakas.id">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image" content="https://perkakas.id/assets/og-cover.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kompres & Resize Gambar Online Gratis — Perkakas.id">
+<meta name="twitter:description" content="Kompres dan ubah ukuran gambar JPG/PNG langsung di browser tanpa upload ke server. Cepat, aman, dan gratis — cocok untuk website, media sosial, dan email.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23204E37'/%3E%3Cpath d='M30 62 L30 38 L45 38 L45 44 L36 44 L36 56 L45 56 L45 62 Z M52 38 L60 38 L70 62 L62 62 L60 56 L52 56 L50 62 L42 62 Z M53.5 50 L58.5 50 L56 43 Z' fill='%23F5F7FA'/%3E%3C/svg%3E" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/tailwind-config.js"></script>
+<link rel="stylesheet" href="assets/style.css">
+
+<!-- ============================================================
+     GOOGLE ADSENSE — Ganti ca-pub-XXXXXXXXXXXXXXXX dengan Publisher ID
+     Anda setelah akun disetujui, lalu hapus komentar di bawah ini.
+     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+============================================================ -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://perkakas.id/"},
+    {"@type": "ListItem", "position": 2, "name": "Kompres Gambar", "item": "https://perkakas.id/kompres-gambar.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Apakah gambar saya diunggah ke server?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Tidak. Seluruh proses kompresi berjalan di browser Anda menggunakan HTML5 Canvas. Gambar tidak pernah dikirim ke server Perkakas.id."}
+    },
+    {
+      "@type": "Question",
+      "name": "Format apa saja yang didukung?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Saat ini tool mendukung file JPG dan PNG. Hasil kompresi selalu diekspor dalam format JPEG untuk ukuran file yang lebih kecil."}
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah ada batas ukuran file?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Tidak ada batas dari sisi kami, karena diproses di perangkat Anda. Batasan sebenarnya tergantung memori dan performa browser Anda."}
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="bg-surface text-ink font-body antialiased">
+
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-forest focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Langsung ke konten utama</a>
+
+<div class="min-h-screen flex">
+
+  <aside id="sidebar"
+    class="fixed inset-y-0 left-0 z-40 w-72 bg-navbg text-white flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-200 ease-out">
+
+    <div class="h-16 flex items-center gap-3 px-5 border-b border-white/10 shrink-0">
+      <a href="index.html" class="flex items-center gap-3 min-w-0">
+        <div class="w-9 h-9 rounded-lg bg-forest flex items-center justify-center font-display font-bold text-white shrink-0">P</div>
+        <div class="leading-tight">
+          <p class="font-display font-semibold text-white text-[15px]">Perkakas<span class="text-amber">.id</span></p>
+          <p class="text-[11px] text-navmuted">Tools langsung di browser</p>
+        </div>
+      </a>
+      <button id="sidebar-close" aria-label="Tutup menu" class="ml-auto lg:hidden text-navmuted hover:text-white p-1">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <nav class="flex-1 overflow-y-auto sidebar-scroll py-4 px-3 space-y-6" aria-label="Navigasi utama">
+
+      <div>
+        <a href="index.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/></svg>
+            Beranda
+          </a>
+      </div>
+
+      <div>
+        <p class="px-3 text-[11px] font-semibold text-navmuted/70 mb-2">Tools</p>
+        <div class="space-y-1">
+          <a href="kompres-gambar.html" aria-current="page" data-tool="1" class="nav-link is-current flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-5-5L5 21"/></svg>
+            <span class="flex-1">Kompres Gambar</span><span class="nav-dot w-1.5 h-1.5 rounded-full bg-transparent"></span>
+          </a>
+
+          <a href="baca-teks.html" data-tool="1" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"/><path d="M9 13h6M9 17h4"/></svg>
+            <span class="flex-1">Baca Teks Dokumen</span><span class="nav-dot w-1.5 h-1.5 rounded-full bg-transparent"></span>
+          </a>
+
+          <a href="hitung-kata.html" data-tool="1" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+            <span class="flex-1">Hitung Kata & Karakter</span><span class="nav-dot w-1.5 h-1.5 rounded-full bg-transparent"></span>
+          </a>
+
+          <a href="password-generator.html" data-tool="1" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            <span class="flex-1">Password Generator</span><span class="nav-dot w-1.5 h-1.5 rounded-full bg-transparent"></span>
+          </a>
+
+          <a href="pemilih-warna.html" data-tool="1" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.9 0 1.5-.7 1.5-1.5 0-.4-.1-.7-.4-1-.2-.3-.4-.6-.4-1 0-.8.7-1.5 1.5-1.5H16c3.3 0 6-2.7 6-6 0-4.4-4-8-10-8Z"/></svg>
+            <span class="flex-1">Pemilih Warna</span><span class="nav-dot w-1.5 h-1.5 rounded-full bg-transparent"></span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="px-3 text-[11px] font-semibold text-navmuted/70 mb-2">Informasi</p>
+        <div class="space-y-1">
+          <a href="tentang.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+            Tentang Kami
+          </a>
+          <a href="privasi.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5Z"/></svg>
+            Kebijakan Privasi
+          </a>
+          <a href="syarat.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><path d="M9 12h6M9 16h6M9 8h6"/><rect x="4" y="3" width="16" height="18" rx="2"/></svg>
+            Syarat & Ketentuan
+          </a>
+          <a href="kontak.html" class="nav-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-[14px] font-medium text-navmuted hover:bg-white/5 hover:text-white transition-colors">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="shrink-0"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            Kontak
+          </a>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="p-4 border-t border-white/10 text-[11px] text-navmuted shrink-0">
+      &copy; <span id="footer-year-side"></span> Perkakas.id — Diproses 100% di browser Anda.
+    </div>
+  </aside>
+
+  <div id="sidebar-overlay" class="fixed inset-0 bg-black/40 z-30 hidden lg:hidden"></div>
+
+  <div class="flex-1 flex flex-col min-w-0 lg:ml-72">
+
+    <header class="h-16 bg-panel border-b border-line flex items-center gap-3 px-4 lg:px-8 sticky top-0 z-20">
+      <button id="sidebar-open" aria-label="Buka menu" class="lg:hidden p-2 -ml-2 text-ink">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <div class="flex-1 relative max-w-md">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="absolute left-3 top-1/2 -translate-y-1/2 text-inkmuted"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="tool-search" type="search" placeholder="Cari tool… (mis. kompres gambar)"
+          class="w-full h-9 pl-9 pr-3 rounded-lg bg-surface border border-line text-[13px] placeholder:text-inkmuted focus:bg-white transition-colors">
+      </div>
+    </header>
+
+    <div class="px-4 lg:px-8 pt-4">
+      <!-- ADSENSE / AD SLOT 1: TOP LEADERBOARD (728x90 / Responsive) -->
+      <div class="ad-slot w-full h-[90px] max-w-3xl mx-auto">
+        <!--
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="0000000001" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        AD SLOT — TOP LEADERBOARD (728×90)
+      </div>
+    </div>
+
+    <main id="main-content" class="flex-1 px-4 lg:px-8 py-6">
+      <div class="grid grid-cols-1 xl:grid-cols-[1fr_300px] gap-6 items-start">
+
+        <div class="min-w-0 space-y-6">
+            <nav aria-label="Breadcrumb" class="text-xs text-inkmuted mb-4">
+              <ol class="flex items-center gap-1.5">
+                <li><a href="index.html" class="hover:text-forest">Beranda</a></li>
+                <li aria-hidden="true">/</li>
+                <li class="text-ink font-medium" aria-current="page">Kompres Gambar</li>
+              </ol>
+            </nav>
+          <header class="mb-4">
+              <h1 class="font-display text-2xl font-semibold">Kompres &amp; Resize Gambar Online</h1>
+              <p class="text-inkmuted text-sm mt-1">Unggah JPG atau PNG, atur kualitas dan lebar maksimum, lalu unduh hasil kompresi &mdash; semuanya diproses lewat HTML5 Canvas di browser Anda.</p>
+            </header>
+
+            <div class="bg-panel border border-line rounded-xl p-5 shadow-card">
+              <div id="img-dropzone" class="border-2 border-dashed border-line rounded-xl p-8 text-center cursor-pointer hover:border-forest/50 hover:bg-forest-light/40 transition-colors">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="mx-auto text-inkmuted mb-2"><path d="M12 16V4M8 8l4-4 4 4"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+                <p class="text-sm font-medium">Seret gambar ke sini, atau klik untuk memilih file</p>
+                <p class="text-xs text-inkmuted mt-1">Mendukung JPG &amp; PNG</p>
+                <input type="file" id="img-input" accept="image/jpeg,image/png" class="hidden">
+              </div>
+
+              <div id="img-controls" class="hidden mt-5 grid sm:grid-cols-2 gap-4">
+                <label class="text-sm">
+                  <span class="font-medium">Kualitas kompresi: <span id="img-quality-value" class="font-mono text-forest">80%</span></span>
+                  <input type="range" id="img-quality" min="10" max="100" value="80" class="w-full mt-2 accent-forest">
+                </label>
+                <label class="text-sm">
+                  <span class="font-medium">Lebar maksimum (px)</span>
+                  <input type="number" id="img-max-width" value="1280" min="100" step="10" class="w-full mt-2 h-9 px-3 rounded-lg border border-line bg-surface text-sm">
+                </label>
+              </div>
+
+              <div id="img-actions" class="hidden mt-4">
+                <button id="img-compress-btn" class="px-5 py-2.5 rounded-lg bg-forest text-white text-sm font-medium hover:bg-forest-dark transition-colors">Kompres Gambar</button>
+              </div>
+            </div>
+
+<div class="ad-slot w-full h-[100px] my-5">
+              <!-- <ins class="adsbygoogle" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000002"></ins> -->
+              AD SLOT &mdash; IN-ARTICLE
+            </div>
+
+            <div id="img-result" class="hidden bg-panel border border-line rounded-xl p-5 shadow-card">
+              <h2 class="font-display font-semibold mb-3">Hasil Kompresi</h2>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-xs text-inkmuted mb-2">Sebelum</p>
+                  <img id="img-before-preview" class="rounded-lg border border-line w-full object-contain max-h-64 bg-surface" alt="Pratinjau gambar sebelum dikompresi">
+                  <p id="img-before-size" class="text-xs font-mono text-inkmuted mt-1"></p>
+                </div>
+                <div>
+                  <p class="text-xs text-inkmuted mb-2">Sesudah</p>
+                  <img id="img-after-preview" class="rounded-lg border border-line w-full object-contain max-h-64 bg-surface" alt="Pratinjau gambar setelah dikompresi">
+                  <p id="img-after-size" class="text-xs font-mono text-forest mt-1"></p>
+                </div>
+              </div>
+              <a id="img-download-btn" href="#" download="perkakas-compressed.jpg" class="mt-4 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber text-white text-sm font-medium hover:bg-amber-dark transition-colors">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0 4-4m-4 4-4-4"/><path d="M4 19h16"/></svg>
+                Unduh Hasil
+              </a>
+            </div>
+
+            <canvas id="img-canvas" class="hidden"></canvas>
+
+            <article class="text-sm text-inkmuted leading-relaxed bg-panel border border-line rounded-xl p-5">
+              <h2 class="font-display text-base font-semibold text-ink mb-2">Cara kerja kompresor gambar ini</h2>
+              <p>Tool ini menggambar ulang gambar Anda ke elemen &lt;canvas&gt; pada resolusi yang lebih kecil, lalu mengekspornya kembali sebagai file JPEG dengan tingkat kualitas yang Anda tentukan. Karena seluruh proses berjalan di browser, file gambar Anda tidak pernah dikirim atau disimpan di server mana pun.</p>
+            </article>
+
+            <section class="bg-panel border border-line rounded-xl p-5 shadow-card mt-5" aria-labelledby="faq-heading">
+              <h2 id="faq-heading" class="font-display font-semibold mb-1">Pertanyaan yang Sering Diajukan</h2>
+              <details class="faq-item border-b border-line py-3">
+                <summary class="flex items-center justify-between gap-3 font-medium text-sm">
+                  Apakah gambar saya diunggah ke server?
+                  <span class="faq-icon text-inkmuted text-lg leading-none">+</span>
+                </summary>
+                <p class="text-sm text-inkmuted mt-2 leading-relaxed">Tidak. Seluruh proses kompresi berjalan di browser Anda menggunakan HTML5 Canvas. Gambar tidak pernah dikirim ke server Perkakas.id.</p>
+              </details>
+
+              <details class="faq-item border-b border-line py-3">
+                <summary class="flex items-center justify-between gap-3 font-medium text-sm">
+                  Format apa saja yang didukung?
+                  <span class="faq-icon text-inkmuted text-lg leading-none">+</span>
+                </summary>
+                <p class="text-sm text-inkmuted mt-2 leading-relaxed">Saat ini tool mendukung file JPG dan PNG. Hasil kompresi selalu diekspor dalam format JPEG untuk ukuran file yang lebih kecil.</p>
+              </details>
+
+              <details class="faq-item border-b border-line py-3">
+                <summary class="flex items-center justify-between gap-3 font-medium text-sm">
+                  Apakah ada batas ukuran file?
+                  <span class="faq-icon text-inkmuted text-lg leading-none">+</span>
+                </summary>
+                <p class="text-sm text-inkmuted mt-2 leading-relaxed">Tidak ada batas dari sisi kami, karena diproses di perangkat Anda. Batasan sebenarnya tergantung memori dan performa browser Anda.</p>
+              </details>
+            </section>
+        </div>
+
+        <aside class="hidden xl:block">
+          <div class="sticky top-24 space-y-4">
+            <!-- ADSENSE / AD SLOT 3: SIDEBAR (300x250 / 160x600 sticky) -->
+            <div class="ad-slot w-[300px] h-[250px]">
+              <!--
+              <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+                   data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000007"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              -->
+              AD SLOT — SIDEBAR (300×250)
+            </div>
+            <div class="ad-slot w-[300px] h-[600px]">
+              <!--
+              <ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px"
+                   data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="0000000008"></ins>
+              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              -->
+              AD SLOT — SIDEBAR (160×600 STICKY)
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </main>
+
+    <div class="px-4 lg:px-8">
+      <div class="ad-slot w-full h-[90px] max-w-3xl mx-auto">
+        <!--
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+             data-ad-slot="0000000009" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        -->
+        AD SLOT — BOTTOM BANNER (728×90)
+      </div>
+    </div>
+
+    <footer class="mt-8 border-t border-line bg-panel">
+      <div class="px-4 lg:px-8 py-8 grid sm:grid-cols-3 gap-6 max-w-5xl">
+        <div>
+          <p class="font-display font-semibold">Perkakas<span class="text-forest">.id</span></p>
+          <p class="text-xs text-inkmuted mt-2 leading-relaxed">Tools online gratis yang berjalan langsung di browser Anda — cepat, ringan, dan tanpa upload server.</p>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-inkmuted mb-2">Tools</p>
+          <ul class="space-y-1.5 text-sm">
+            <li><a href="kompres-gambar.html" class="hover:text-forest">Kompres Gambar</a></li>
+            <li><a href="baca-teks.html" class="hover:text-forest">Baca Teks Dokumen</a></li>
+            <li><a href="hitung-kata.html" class="hover:text-forest">Hitung Kata & Karakter</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-inkmuted mb-2">Informasi</p>
+          <ul class="space-y-1.5 text-sm">
+            <li><a href="tentang.html" class="hover:text-forest">Tentang Kami</a></li>
+            <li><a href="privasi.html" class="hover:text-forest">Kebijakan Privasi</a></li>
+            <li><a href="syarat.html" class="hover:text-forest">Syarat & Ketentuan</a></li>
+            <li><a href="kontak.html" class="hover:text-forest">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-line px-4 lg:px-8 py-4 text-xs text-inkmuted">
+        &copy; <span id="footer-year"></span> Perkakas.id. Seluruh hak cipta dilindungi.
+      </div>
+    </footer>
+
+  </div>
+</div>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
